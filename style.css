@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    display: inline;
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(83, 83, 83);
+}
+
+.upp{
+    margin-top: 25%;
+    margin-left: 50%;
+    margin-bottom: 10%;
+    min-height: 100px;
+    display:inline-block;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 50px 0;
+    /* width: 100%; */
+}
+.center{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.outer{
+    position: fixed;
+    margin: 0,50px;
+    /* background:linear-gradient(#46c5db, #85f802,#d75ce7); */
+}
+.outer{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+.outer button, .outer span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.outer button{
+    background: #111;
+    color: #f2f2f2;
+    outline: none;
+    font-size: 20px;
+    z-index: 9;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+}
+.outer span{
+    height: 100%;
+    width: 100%;
+    background: inherit;
+    border-radius: 50%;
+}
+.outer span:nth-child(1){
+    filter: blur(10px);
+}
+.outer span:nth-child(2){
+    filter: blur(17px);
+}
+.outer{
+    animation: rotate 1.5s linear infinite;
+
+}
+@keyframes rotate {
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+.low{
+    /* height: 380px; */
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    /* background-color: rgb(37,37,37); */
+    flex-direction: column;
+    padding: 20px 0;
+}
+.low textarea{
+    text-align: center;
+    /* color: rgba(255,255,255,0.322); */
+    margin-bottom: 40px;
+}
+.a{
+    width: 75%;
+    /* max-width: 500px; */
+    margin: 0 auto;
+    justify-content: center;
+}
+.b textarea{
+    color: rgb(0, 0, 0);
+    display: none;
+    text-align: center;
+    width: 80%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 18px;
+    margin-bottom: 7px;
+    margin-left: 10%;
+    font-size: 17px;
+}
+.b button{
+    margin-left: 47%;
+    padding: 11px 22px;
+    background: rgb(17,106,198);
+    color: #fff;
+    border: none;
+    margin-bottom: 2px;
+    font-size: 17px;
+    display: none;
+}
+.sa{
+    display: none;
+}
+
